@@ -2,11 +2,12 @@ package pruningmanager_test
 
 import (
 	"encoding/json"
-	"github.com/kaspanet/kaspad/infrastructure/db/database"
 	"os"
 	"path/filepath"
 	"testing"
 	"time"
+
+	"github.com/kaspanet/kaspad/infrastructure/db/database"
 
 	"github.com/kaspanet/kaspad/domain/consensus/model"
 
@@ -36,9 +37,9 @@ func TestPruning(t *testing.T) {
 			dagconfig.SimnetParams.Name:  "1582",
 		},
 		"dag-for-test-pruning.json": {
-			dagconfig.MainnetParams.Name: "503",
+			dagconfig.MainnetParams.Name: "502",
 			dagconfig.TestnetParams.Name: "503",
-			dagconfig.DevnetParams.Name:  "502",
+			dagconfig.DevnetParams.Name:  "503",
 			dagconfig.SimnetParams.Name:  "503",
 		},
 	}

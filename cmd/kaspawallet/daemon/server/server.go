@@ -102,7 +102,7 @@ func Start(params *dagconfig.Params, listen, rpcServer string, keysFilePath stri
 	}
 
 	coinbaseMaturity := params.BlockCoinbaseMaturity
-	if dagInfo.NetworkName == "kaspa-testnet-11" {
+	if dagInfo.NetworkName == "zork-testnet-11" {
 		coinbaseMaturity = 1000
 	}
 

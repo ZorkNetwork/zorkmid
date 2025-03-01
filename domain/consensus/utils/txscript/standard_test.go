@@ -6,9 +6,10 @@ package txscript
 
 import (
 	"bytes"
-	"github.com/kaspanet/kaspad/domain/consensus/model/externalapi"
 	"reflect"
 	"testing"
+
+	"github.com/kaspanet/kaspad/domain/consensus/model/externalapi"
 
 	"github.com/kaspanet/kaspad/domain/dagconfig"
 	"github.com/kaspanet/kaspad/util"
@@ -82,19 +83,19 @@ func TestExtractScriptPubKeyAddrs(t *testing.T) {
 		{
 			name: "standard p2pk",
 			script: &externalapi.ScriptPublicKey{
-				Script:  hexToBytes("202454a285d8566b0cb2792919536ee0f1b6f69b58ba59e9850ecbc91eef722daeac"),
+				Script:  hexToBytes("2089ac24ea10bb751af4939623ccc5e550d96842b64e8fca0f63e94b4373fd555eac"),
 				Version: 0,
 			},
-			addr:  newAddressPublicKey(hexToBytes("2454a285d8566b0cb2792919536ee0f1b6f69b58ba59e9850ecbc91eef722dae")),
+			addr:  newAddressPublicKey(hexToBytes("89ac24ea10bb751af4939623ccc5e550d96842b64e8fca0f63e94b4373fd555e")),
 			class: PubKeyTy,
 		},
 		{
 			name: "standard p2pk ECDSA",
 			script: &externalapi.ScriptPublicKey{
-				Script:  hexToBytes("212454a285d8566b0cb2792919536ee0f1b6f69b58ba59e9850ecbc91eef722daeaaab"),
+				Script:  hexToBytes("2189ac24ea10bb751af4939623ccc5e550d96842b64e8fca0f63e94b4373fd555eaaab"),
 				Version: 0,
 			},
-			addr:  newAddressPublicKeyECDSA(hexToBytes("2454a285d8566b0cb2792919536ee0f1b6f69b58ba59e9850ecbc91eef722daeaa")),
+			addr:  newAddressPublicKeyECDSA(hexToBytes("89ac24ea10bb751af4939623ccc5e550d96842b64e8fca0f63e94b4373fd555eaa")),
 			class: PubKeyECDSATy,
 		},
 		{

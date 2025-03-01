@@ -9,7 +9,7 @@ import (
 
 var (
 	backendLog = logger.NewBackend()
-	log        = backendLog.Logger("KSMN")
+	log        = backendLog.Logger("MINE")
 	spawn      = panics.GoroutineWrapperFunc(log)
 )
 

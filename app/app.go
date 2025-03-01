@@ -31,9 +31,9 @@ var desiredLimits = &limits.DesiredLimits{
 }
 
 var serviceDescription = &winservice.ServiceDescription{
-	Name:        "kaspadsvc",
-	DisplayName: "Kaspad Service",
-	Description: "Downloads and stays synchronized with the Kaspa blockDAG and " +
+	Name:        "zorknodesvc",
+	DisplayName: "Zork Node Service",
+	Description: "Downloads and stays synchronized with the blockDAG and " +
 		"provides DAG services to applications.",
 }
 
@@ -125,12 +125,12 @@ func (app *kaspadApp) main(startedChan chan<- struct{}) error {
 	// Create componentManager and start it.
 	componentManager, err := NewComponentManager(app.cfg, databaseContext, interrupt)
 	if err != nil {
-		log.Errorf("Unable to start kaspad: %+v", err)
+		log.Errorf("Unable to start node: %+v", err)
 		return err
 	}
 
 	defer func() {
-		log.Infof("Gracefully shutting down kaspad...")
+		log.Infof("Gracefully shutting down node...")
 
 		shutdownDone := make(chan struct{})
 		go func() {
@@ -145,7 +145,7 @@ func (app *kaspadApp) main(startedChan chan<- struct{}) error {
 		case <-time.After(shutdownTimeout):
 			log.Criticalf("Graceful shutdown timed out %s. Terminating...", shutdownTimeout)
 		}
-		log.Infof("Kaspad shutdown complete")
+		log.Infof("Node shutdown complete")
 	}()
 
 	componentManager.Start()

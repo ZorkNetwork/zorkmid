@@ -22,14 +22,14 @@ const (
 	rpcAddress4 = "127.0.0.1:12348"
 	rpcAddress5 = "127.0.0.1:12349"
 
-	miningAddress1           = "kaspasim:qqqqnc0pxg7qw3qkc7l6sge8kfhsvvyt7mkw8uamtndqup27ftnd6c769gn66"
-	miningAddress1PrivateKey = "0d81045b0deb2af36a25403c2154c87aa82d89dd337b575bae27ce7f5de53cee"
+	miningAddress1           = "zorksim:qqrut86v094tl3gmzd5dna694p2gzplfwfgl0g7nt5vcnka9t3d5clczq93y2"
+	miningAddress1PrivateKey = "f74c54eaea70d6fddf3ebfa6a74c571b9efdb152aa25493acabd9d768ecd529d"
 
-	miningAddress2           = "kaspasim:qqqqnc0pxg7qw3qkc7l6sge8kfhsvvyt7mkw8uamtndqup27ftnd6c769gn66"
-	miningAddress2PrivateKey = "0d81045b0deb2af36a25403c2154c87aa82d89dd337b575bae27ce7f5de53cee"
+	miningAddress2           = "zorksim:qqrut86v094tl3gmzd5dna694p2gzplfwfgl0g7nt5vcnka9t3d5clczq93y2"
+	miningAddress2PrivateKey = "f74c54eaea70d6fddf3ebfa6a74c571b9efdb152aa25493acabd9d768ecd529d"
 
-	miningAddress3           = "kaspasim:qqq754f2gdcjcnykwuwwr60c82rh5u6mxxe7yqxljnrxz9fu0h95kduq9ezng"
-	miningAddress3PrivateKey = "f6c8f31fd359cbb97007034780bc4021f6ad01c6bc10499b79849efd4cc7ca39"
+	miningAddress3           = "zorksim:qznryhlsz2w3f8rfrja3qm5gsw99x4ry4hfalpurf28dxez9vkr3jc6tffmh2"
+	miningAddress3PrivateKey = "f42805a8e868d8ca1db1a6bea4ddb00d86b6355c1a4b4c8ea147542da924b4f9"
 
 	defaultTimeout = 30 * time.Second
 )

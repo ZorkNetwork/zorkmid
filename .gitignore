@@ -25,6 +25,11 @@ cmd/kaspactl/kaspactl
 cmd/kasminer/kaspaminer
 *.exe
 *.exe~
+zorkmid
+cmd/kaspactl/zorkctl
+cmd/kaspaminer/miner
+cmd/kaspawallet/zorkwallet
+cmd/genkeypair/keygen
 
 # Output of the go coverage tool
 *.out

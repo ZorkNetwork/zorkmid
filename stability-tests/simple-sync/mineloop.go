@@ -130,7 +130,7 @@ func areTipsAreEqual(resultA, resultB *appmessage.GetBlockDAGInfoResponseMessage
 
 func mineBlock(syncerRPCAddress string, miningAddress util.Address) error {
 	kaspaMinerCmd, err := common.StartCmd("MINER",
-		"kaspaminer",
+		"miner",
 		common.NetworkCliArgumentFromNetParams(activeConfig().NetParams()),
 		"-s", syncerRPCAddress,
 		"--mine-when-not-synced",
