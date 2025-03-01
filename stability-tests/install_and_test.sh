@@ -4,7 +4,7 @@ FLAGS=$@
 
 go version
 
-go get $FLAGS -t -d ../...
+go get $FLAGS -t ../...
 go install $FLAGS honnef.co/go/tools/cmd/staticcheck@latest
 
 test -z "$(go fmt ./...)"

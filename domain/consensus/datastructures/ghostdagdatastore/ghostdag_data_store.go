@@ -1,12 +1,12 @@
 package ghostdagdatastore
 
 import (
-	"github.com/golang/protobuf/proto"
 	"github.com/kaspanet/kaspad/domain/consensus/database/serialization"
 	"github.com/kaspanet/kaspad/domain/consensus/model"
 	"github.com/kaspanet/kaspad/domain/consensus/model/externalapi"
 	"github.com/kaspanet/kaspad/domain/consensus/utils/lrucacheghostdagdata"
 	"github.com/kaspanet/kaspad/util/staging"
+	"google.golang.org/protobuf/proto"
 )
 
 var ghostdagDataBucketName = []byte("block-ghostdag-data")

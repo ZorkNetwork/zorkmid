@@ -1,7 +1,6 @@
 package reachabilitydatastore
 
 import (
-	"github.com/golang/protobuf/proto"
 	"github.com/kaspanet/kaspad/domain/consensus/database/serialization"
 	"github.com/kaspanet/kaspad/domain/consensus/model"
 	"github.com/kaspanet/kaspad/domain/consensus/model/externalapi"
@@ -9,6 +8,7 @@ import (
 	"github.com/kaspanet/kaspad/infrastructure/db/database"
 	"github.com/kaspanet/kaspad/util/staging"
 	"github.com/pkg/errors"
+	"google.golang.org/protobuf/proto"
 )
 
 var reachabilityDataBucketName = []byte("reachability-data")

@@ -8,7 +8,6 @@ require (
 	github.com/btcsuite/winsvc v1.0.0
 	github.com/davecgh/go-spew v1.1.1
 	github.com/gofrs/flock v0.8.1
-	github.com/golang/protobuf v1.5.4
 	github.com/jessevdk/go-flags v1.4.0
 	github.com/jrick/logrotate v1.0.0
 	github.com/kaspanet/go-muhash v0.0.4
@@ -23,6 +22,7 @@ require (
 )
 
 require (
+	github.com/golang/protobuf v1.5.4 // indirect
 	github.com/golang/snappy v0.0.1 // indirect
 	golang.org/x/net v0.30.0 // indirect
 	golang.org/x/sys v0.26.0 // indirect
