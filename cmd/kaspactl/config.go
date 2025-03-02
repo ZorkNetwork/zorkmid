@@ -1,8 +1,8 @@
 package main
 
 import (
+	"github.com/ZorkNetwork/zorkmid/infrastructure/config"
 	"github.com/jessevdk/go-flags"
-	"github.com/kaspanet/kaspad/infrastructure/config"
 	"github.com/pkg/errors"
 )
 

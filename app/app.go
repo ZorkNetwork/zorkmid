@@ -7,17 +7,17 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/kaspanet/kaspad/infrastructure/config"
-	"github.com/kaspanet/kaspad/infrastructure/db/database"
-	"github.com/kaspanet/kaspad/infrastructure/db/database/ldb"
-	"github.com/kaspanet/kaspad/infrastructure/logger"
-	"github.com/kaspanet/kaspad/infrastructure/os/execenv"
-	"github.com/kaspanet/kaspad/infrastructure/os/limits"
-	"github.com/kaspanet/kaspad/infrastructure/os/signal"
-	"github.com/kaspanet/kaspad/infrastructure/os/winservice"
-	"github.com/kaspanet/kaspad/util/panics"
-	"github.com/kaspanet/kaspad/util/profiling"
-	"github.com/kaspanet/kaspad/version"
+	"github.com/ZorkNetwork/zorkmid/infrastructure/config"
+	"github.com/ZorkNetwork/zorkmid/infrastructure/db/database"
+	"github.com/ZorkNetwork/zorkmid/infrastructure/db/database/ldb"
+	"github.com/ZorkNetwork/zorkmid/infrastructure/logger"
+	"github.com/ZorkNetwork/zorkmid/infrastructure/os/execenv"
+	"github.com/ZorkNetwork/zorkmid/infrastructure/os/limits"
+	"github.com/ZorkNetwork/zorkmid/infrastructure/os/signal"
+	"github.com/ZorkNetwork/zorkmid/infrastructure/os/winservice"
+	"github.com/ZorkNetwork/zorkmid/util/panics"
+	"github.com/ZorkNetwork/zorkmid/util/profiling"
+	"github.com/ZorkNetwork/zorkmid/version"
 )
 
 const (

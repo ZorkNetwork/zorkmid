@@ -1,8 +1,8 @@
 package addressmanager
 
 import (
-	"github.com/kaspanet/kaspad/app/appmessage"
-	"github.com/kaspanet/kaspad/util/mstime"
+	"github.com/ZorkNetwork/zorkmid/app/appmessage"
+	"github.com/ZorkNetwork/zorkmid/util/mstime"
 	"net"
 	"reflect"
 	"testing"

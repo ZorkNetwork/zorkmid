@@ -3,16 +3,16 @@ package consensus
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/kaspanet/kaspad/domain/consensus/model"
-	"github.com/kaspanet/kaspad/domain/consensus/utils/hashset"
-	"github.com/kaspanet/kaspad/util/staging"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/model"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/utils/hashset"
+	"github.com/ZorkNetwork/zorkmid/util/staging"
 	"io"
 
-	"github.com/kaspanet/kaspad/domain/consensus/model/externalapi"
-	"github.com/kaspanet/kaspad/domain/consensus/model/testapi"
-	"github.com/kaspanet/kaspad/domain/consensus/utils/consensushashing"
-	"github.com/kaspanet/kaspad/domain/dagconfig"
-	"github.com/kaspanet/kaspad/infrastructure/db/database"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/model/externalapi"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/model/testapi"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/utils/consensushashing"
+	"github.com/ZorkNetwork/zorkmid/domain/dagconfig"
+	"github.com/ZorkNetwork/zorkmid/infrastructure/db/database"
 	"github.com/pkg/errors"
 )
 

@@ -7,8 +7,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/kaspanet/kaspad/stability-tests/common"
-	"github.com/kaspanet/kaspad/util/panics"
+	"github.com/ZorkNetwork/zorkmid/stability-tests/common"
+	"github.com/ZorkNetwork/zorkmid/util/panics"
 	"github.com/pkg/errors"
 )
 

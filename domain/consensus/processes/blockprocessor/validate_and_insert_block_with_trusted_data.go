@@ -1,10 +1,10 @@
 package blockprocessor
 
 import (
-	"github.com/kaspanet/kaspad/domain/consensus/model"
-	"github.com/kaspanet/kaspad/domain/consensus/model/externalapi"
-	"github.com/kaspanet/kaspad/domain/consensus/utils/consensushashing"
-	"github.com/kaspanet/kaspad/infrastructure/db/database"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/model"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/model/externalapi"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/utils/consensushashing"
+	"github.com/ZorkNetwork/zorkmid/infrastructure/db/database"
 )
 
 func (bp *blockProcessor) validateAndInsertBlockWithTrustedData(stagingArea *model.StagingArea,

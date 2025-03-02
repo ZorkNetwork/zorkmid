@@ -3,8 +3,8 @@ package ruleerrors
 import (
 	"fmt"
 
-	"github.com/kaspanet/kaspad/domain/consensus/model/externalapi"
-	"github.com/kaspanet/kaspad/domain/consensus/utils/consensushashing"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/model/externalapi"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/utils/consensushashing"
 	"github.com/pkg/errors"
 )
 

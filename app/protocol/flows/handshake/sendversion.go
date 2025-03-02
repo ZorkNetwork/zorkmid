@@ -1,12 +1,12 @@
 package handshake
 
 import (
-	"github.com/kaspanet/kaspad/app/appmessage"
-	"github.com/kaspanet/kaspad/app/protocol/common"
-	peerpkg "github.com/kaspanet/kaspad/app/protocol/peer"
-	"github.com/kaspanet/kaspad/infrastructure/logger"
-	"github.com/kaspanet/kaspad/infrastructure/network/netadapter/router"
-	"github.com/kaspanet/kaspad/version"
+	"github.com/ZorkNetwork/zorkmid/app/appmessage"
+	"github.com/ZorkNetwork/zorkmid/app/protocol/common"
+	peerpkg "github.com/ZorkNetwork/zorkmid/app/protocol/peer"
+	"github.com/ZorkNetwork/zorkmid/infrastructure/logger"
+	"github.com/ZorkNetwork/zorkmid/infrastructure/network/netadapter/router"
+	"github.com/ZorkNetwork/zorkmid/version"
 	"github.com/pkg/errors"
 )
 

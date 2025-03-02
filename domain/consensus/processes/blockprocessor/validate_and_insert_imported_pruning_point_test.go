@@ -1,21 +1,21 @@
 package blockprocessor_test
 
 import (
-	"github.com/kaspanet/kaspad/domain/consensus/model"
-	"github.com/kaspanet/kaspad/domain/consensus/utils/constants"
-	"github.com/kaspanet/kaspad/domain/consensus/utils/txscript"
-	"github.com/kaspanet/kaspad/domain/dagconfig"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/model"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/utils/constants"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/utils/txscript"
+	"github.com/ZorkNetwork/zorkmid/domain/dagconfig"
 	"math"
 	"testing"
 	"time"
 
-	"github.com/kaspanet/kaspad/domain/consensus"
-	"github.com/kaspanet/kaspad/domain/consensus/model/externalapi"
-	"github.com/kaspanet/kaspad/domain/consensus/model/testapi"
-	"github.com/kaspanet/kaspad/domain/consensus/ruleerrors"
-	"github.com/kaspanet/kaspad/domain/consensus/utils/consensushashing"
-	"github.com/kaspanet/kaspad/domain/consensus/utils/testutils"
-	"github.com/kaspanet/kaspad/domain/consensus/utils/utxo"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/model/externalapi"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/model/testapi"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/ruleerrors"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/utils/consensushashing"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/utils/testutils"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/utils/utxo"
 	"github.com/pkg/errors"
 )
 

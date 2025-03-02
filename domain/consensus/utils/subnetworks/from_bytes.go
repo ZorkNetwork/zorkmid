@@ -1,7 +1,7 @@
 package subnetworks
 
 import (
-	"github.com/kaspanet/kaspad/domain/consensus/model/externalapi"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/model/externalapi"
 	"github.com/pkg/errors"
 )
 

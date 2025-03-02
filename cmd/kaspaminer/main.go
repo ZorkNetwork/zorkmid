@@ -4,17 +4,17 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/kaspanet/kaspad/util"
+	"github.com/ZorkNetwork/zorkmid/util"
 
-	"github.com/kaspanet/kaspad/version"
+	"github.com/ZorkNetwork/zorkmid/version"
 
 	"github.com/pkg/errors"
 
 	_ "net/http/pprof"
 
-	"github.com/kaspanet/kaspad/infrastructure/os/signal"
-	"github.com/kaspanet/kaspad/util/panics"
-	"github.com/kaspanet/kaspad/util/profiling"
+	"github.com/ZorkNetwork/zorkmid/infrastructure/os/signal"
+	"github.com/ZorkNetwork/zorkmid/util/panics"
+	"github.com/ZorkNetwork/zorkmid/util/profiling"
 )
 
 func main() {

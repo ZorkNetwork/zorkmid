@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
-	"github.com/kaspanet/kaspad/infrastructure/logger"
-	"github.com/kaspanet/kaspad/stability-tests/common"
-	"github.com/kaspanet/kaspad/util/panics"
+	"github.com/ZorkNetwork/zorkmid/infrastructure/logger"
+	"github.com/ZorkNetwork/zorkmid/stability-tests/common"
+	"github.com/ZorkNetwork/zorkmid/util/panics"
 	"os"
 )
 

@@ -1,14 +1,14 @@
 package libkaspawallet
 
 import (
-	"github.com/kaspanet/kaspad/cmd/kaspawallet/libkaspawallet/bip32"
-	"github.com/kaspanet/kaspad/cmd/kaspawallet/libkaspawallet/serialization"
-	"github.com/kaspanet/kaspad/domain/consensus/model/externalapi"
-	"github.com/kaspanet/kaspad/domain/consensus/utils/constants"
-	"github.com/kaspanet/kaspad/domain/consensus/utils/subnetworks"
-	"github.com/kaspanet/kaspad/domain/consensus/utils/txscript"
-	"github.com/kaspanet/kaspad/domain/consensus/utils/utxo"
-	"github.com/kaspanet/kaspad/util"
+	"github.com/ZorkNetwork/zorkmid/cmd/kaspawallet/libkaspawallet/bip32"
+	"github.com/ZorkNetwork/zorkmid/cmd/kaspawallet/libkaspawallet/serialization"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/model/externalapi"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/utils/constants"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/utils/subnetworks"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/utils/txscript"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/utils/utxo"
+	"github.com/ZorkNetwork/zorkmid/util"
 	"github.com/pkg/errors"
 )
 

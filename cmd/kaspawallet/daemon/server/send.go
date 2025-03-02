@@ -3,7 +3,7 @@ package server
 import (
 	"context"
 
-	"github.com/kaspanet/kaspad/cmd/kaspawallet/daemon/pb"
+	"github.com/ZorkNetwork/zorkmid/cmd/kaspawallet/daemon/pb"
 	"github.com/pkg/errors"
 )
 

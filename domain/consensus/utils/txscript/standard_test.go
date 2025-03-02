@@ -9,10 +9,10 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/kaspanet/kaspad/domain/consensus/model/externalapi"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/model/externalapi"
 
-	"github.com/kaspanet/kaspad/domain/dagconfig"
-	"github.com/kaspanet/kaspad/util"
+	"github.com/ZorkNetwork/zorkmid/domain/dagconfig"
+	"github.com/ZorkNetwork/zorkmid/util"
 )
 
 // mustParseShortForm parses the passed short form script and returns the

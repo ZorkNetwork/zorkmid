@@ -1,10 +1,10 @@
 package headersselectedtipstore
 
 import (
-	"github.com/kaspanet/kaspad/domain/consensus/database/serialization"
-	"github.com/kaspanet/kaspad/domain/consensus/model"
-	"github.com/kaspanet/kaspad/domain/consensus/model/externalapi"
-	"github.com/kaspanet/kaspad/util/staging"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/database/serialization"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/model"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/model/externalapi"
+	"github.com/ZorkNetwork/zorkmid/util/staging"
 	"google.golang.org/protobuf/proto"
 )
 

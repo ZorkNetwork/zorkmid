@@ -1,10 +1,10 @@
 package blockrelay
 
 import (
-	"github.com/kaspanet/kaspad/app/appmessage"
-	"github.com/kaspanet/kaspad/app/protocol/protocolerrors"
-	"github.com/kaspanet/kaspad/domain"
-	"github.com/kaspanet/kaspad/infrastructure/network/netadapter/router"
+	"github.com/ZorkNetwork/zorkmid/app/appmessage"
+	"github.com/ZorkNetwork/zorkmid/app/protocol/protocolerrors"
+	"github.com/ZorkNetwork/zorkmid/domain"
+	"github.com/ZorkNetwork/zorkmid/infrastructure/network/netadapter/router"
 	"github.com/pkg/errors"
 )
 

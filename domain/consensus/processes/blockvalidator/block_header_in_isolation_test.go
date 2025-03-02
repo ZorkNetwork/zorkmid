@@ -1,18 +1,18 @@
 package blockvalidator_test
 
 import (
-	"github.com/kaspanet/kaspad/domain/consensus/model/testapi"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/model/testapi"
 	"reflect"
 	"runtime"
 	"testing"
 
-	"github.com/kaspanet/kaspad/domain/consensus"
-	"github.com/kaspanet/kaspad/domain/consensus/model/externalapi"
-	"github.com/kaspanet/kaspad/domain/consensus/ruleerrors"
-	"github.com/kaspanet/kaspad/domain/consensus/utils/blockheader"
-	"github.com/kaspanet/kaspad/domain/consensus/utils/constants"
-	"github.com/kaspanet/kaspad/domain/consensus/utils/testutils"
-	"github.com/kaspanet/kaspad/util/mstime"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/model/externalapi"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/ruleerrors"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/utils/blockheader"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/utils/constants"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/utils/testutils"
+	"github.com/ZorkNetwork/zorkmid/util/mstime"
 	"github.com/pkg/errors"
 )
 

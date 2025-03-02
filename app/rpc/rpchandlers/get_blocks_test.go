@@ -5,18 +5,18 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/kaspanet/kaspad/domain/consensus/model"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/model"
 
-	"github.com/kaspanet/kaspad/app/appmessage"
-	"github.com/kaspanet/kaspad/app/rpc/rpccontext"
-	"github.com/kaspanet/kaspad/app/rpc/rpchandlers"
-	"github.com/kaspanet/kaspad/domain/consensus"
-	"github.com/kaspanet/kaspad/domain/consensus/model/externalapi"
-	"github.com/kaspanet/kaspad/domain/consensus/model/testapi"
-	"github.com/kaspanet/kaspad/domain/consensus/utils/hashes"
-	"github.com/kaspanet/kaspad/domain/consensus/utils/testutils"
-	"github.com/kaspanet/kaspad/domain/miningmanager"
-	"github.com/kaspanet/kaspad/infrastructure/config"
+	"github.com/ZorkNetwork/zorkmid/app/appmessage"
+	"github.com/ZorkNetwork/zorkmid/app/rpc/rpccontext"
+	"github.com/ZorkNetwork/zorkmid/app/rpc/rpchandlers"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/model/externalapi"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/model/testapi"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/utils/hashes"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/utils/testutils"
+	"github.com/ZorkNetwork/zorkmid/domain/miningmanager"
+	"github.com/ZorkNetwork/zorkmid/infrastructure/config"
 )
 
 type fakeDomain struct {

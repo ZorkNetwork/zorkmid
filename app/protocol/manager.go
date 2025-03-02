@@ -5,20 +5,20 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/kaspanet/kaspad/app/protocol/common"
+	"github.com/ZorkNetwork/zorkmid/app/protocol/common"
 
 	"github.com/pkg/errors"
 
-	"github.com/kaspanet/kaspad/domain"
+	"github.com/ZorkNetwork/zorkmid/domain"
 
-	"github.com/kaspanet/kaspad/domain/consensus/model/externalapi"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/model/externalapi"
 
-	"github.com/kaspanet/kaspad/app/protocol/flowcontext"
-	peerpkg "github.com/kaspanet/kaspad/app/protocol/peer"
-	"github.com/kaspanet/kaspad/infrastructure/config"
-	"github.com/kaspanet/kaspad/infrastructure/network/addressmanager"
-	"github.com/kaspanet/kaspad/infrastructure/network/connmanager"
-	"github.com/kaspanet/kaspad/infrastructure/network/netadapter"
+	"github.com/ZorkNetwork/zorkmid/app/protocol/flowcontext"
+	peerpkg "github.com/ZorkNetwork/zorkmid/app/protocol/peer"
+	"github.com/ZorkNetwork/zorkmid/infrastructure/config"
+	"github.com/ZorkNetwork/zorkmid/infrastructure/network/addressmanager"
+	"github.com/ZorkNetwork/zorkmid/infrastructure/network/connmanager"
+	"github.com/ZorkNetwork/zorkmid/infrastructure/network/netadapter"
 )
 
 // Manager manages the p2p protocol

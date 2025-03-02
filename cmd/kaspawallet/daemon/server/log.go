@@ -5,10 +5,10 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/kaspanet/kaspad/util"
+	"github.com/ZorkNetwork/zorkmid/util"
 
-	"github.com/kaspanet/kaspad/infrastructure/logger"
-	"github.com/kaspanet/kaspad/util/panics"
+	"github.com/ZorkNetwork/zorkmid/infrastructure/logger"
+	"github.com/ZorkNetwork/zorkmid/util/panics"
 )
 
 var (

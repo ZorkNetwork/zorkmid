@@ -9,7 +9,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/kaspanet/kaspad/infrastructure/db/database"
+	"github.com/ZorkNetwork/zorkmid/infrastructure/db/database"
 )
 
 func TestDatabasePut(t *testing.T) {

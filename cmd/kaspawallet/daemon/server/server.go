@@ -8,20 +8,20 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/kaspanet/kaspad/version"
+	"github.com/ZorkNetwork/zorkmid/version"
 
-	"github.com/kaspanet/kaspad/domain/consensus/model/externalapi"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/model/externalapi"
 
-	"github.com/kaspanet/kaspad/util/txmass"
+	"github.com/ZorkNetwork/zorkmid/util/txmass"
 
-	"github.com/kaspanet/kaspad/util/profiling"
+	"github.com/ZorkNetwork/zorkmid/util/profiling"
 
-	"github.com/kaspanet/kaspad/cmd/kaspawallet/daemon/pb"
-	"github.com/kaspanet/kaspad/cmd/kaspawallet/keys"
-	"github.com/kaspanet/kaspad/domain/dagconfig"
-	"github.com/kaspanet/kaspad/infrastructure/network/rpcclient"
-	"github.com/kaspanet/kaspad/infrastructure/os/signal"
-	"github.com/kaspanet/kaspad/util/panics"
+	"github.com/ZorkNetwork/zorkmid/cmd/kaspawallet/daemon/pb"
+	"github.com/ZorkNetwork/zorkmid/cmd/kaspawallet/keys"
+	"github.com/ZorkNetwork/zorkmid/domain/dagconfig"
+	"github.com/ZorkNetwork/zorkmid/infrastructure/network/rpcclient"
+	"github.com/ZorkNetwork/zorkmid/infrastructure/os/signal"
+	"github.com/ZorkNetwork/zorkmid/util/panics"
 	"github.com/pkg/errors"
 
 	"google.golang.org/grpc"

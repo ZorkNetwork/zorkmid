@@ -18,8 +18,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/kaspanet/kaspad/util"
-	"github.com/kaspanet/kaspad/domain/dagconfig"
+	"github.com/ZorkNetwork/zorkmid/util"
+	"github.com/ZorkNetwork/zorkmid/domain/dagconfig"
 )
 
 var testnet = flag.Bool("testnet", false, "operate on the testnet Kaspa network")

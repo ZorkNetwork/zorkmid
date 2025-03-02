@@ -1,20 +1,20 @@
 package blocktemplatebuilder
 
 import (
-	"github.com/kaspanet/kaspad/domain/consensus/processes/coinbasemanager"
-	"github.com/kaspanet/kaspad/domain/consensus/utils/merkle"
-	"github.com/kaspanet/kaspad/domain/consensus/utils/transactionhelper"
-	"github.com/kaspanet/kaspad/domain/consensusreference"
-	"github.com/kaspanet/kaspad/util/mstime"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/processes/coinbasemanager"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/utils/merkle"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/utils/transactionhelper"
+	"github.com/ZorkNetwork/zorkmid/domain/consensusreference"
+	"github.com/ZorkNetwork/zorkmid/util/mstime"
 	"math"
 	"sort"
 
-	"github.com/kaspanet/kaspad/util/difficulty"
+	"github.com/ZorkNetwork/zorkmid/util/difficulty"
 
-	consensusexternalapi "github.com/kaspanet/kaspad/domain/consensus/model/externalapi"
-	"github.com/kaspanet/kaspad/domain/consensus/ruleerrors"
-	"github.com/kaspanet/kaspad/domain/consensus/utils/subnetworks"
-	miningmanagerapi "github.com/kaspanet/kaspad/domain/miningmanager/model"
+	consensusexternalapi "github.com/ZorkNetwork/zorkmid/domain/consensus/model/externalapi"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/ruleerrors"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/utils/subnetworks"
+	miningmanagerapi "github.com/ZorkNetwork/zorkmid/domain/miningmanager/model"
 	"github.com/pkg/errors"
 )
 

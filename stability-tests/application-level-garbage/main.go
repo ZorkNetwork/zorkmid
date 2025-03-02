@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/kaspanet/kaspad/infrastructure/config"
-	"github.com/kaspanet/kaspad/infrastructure/network/netadapter/standalone"
-	"github.com/kaspanet/kaspad/stability-tests/common"
-	"github.com/kaspanet/kaspad/util/panics"
-	"github.com/kaspanet/kaspad/util/profiling"
+	"github.com/ZorkNetwork/zorkmid/infrastructure/config"
+	"github.com/ZorkNetwork/zorkmid/infrastructure/network/netadapter/standalone"
+	"github.com/ZorkNetwork/zorkmid/stability-tests/common"
+	"github.com/ZorkNetwork/zorkmid/util/panics"
+	"github.com/ZorkNetwork/zorkmid/util/profiling"
 )
 
 func main() {

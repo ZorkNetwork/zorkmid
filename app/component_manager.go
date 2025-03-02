@@ -4,22 +4,22 @@ import (
 	"fmt"
 	"sync/atomic"
 
-	"github.com/kaspanet/kaspad/domain/consensus/model/externalapi"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/model/externalapi"
 
-	"github.com/kaspanet/kaspad/domain/miningmanager/mempool"
+	"github.com/ZorkNetwork/zorkmid/domain/miningmanager/mempool"
 
-	"github.com/kaspanet/kaspad/app/protocol"
-	"github.com/kaspanet/kaspad/app/rpc"
-	"github.com/kaspanet/kaspad/domain"
-	"github.com/kaspanet/kaspad/domain/consensus"
-	"github.com/kaspanet/kaspad/domain/utxoindex"
-	"github.com/kaspanet/kaspad/infrastructure/config"
-	infrastructuredatabase "github.com/kaspanet/kaspad/infrastructure/db/database"
-	"github.com/kaspanet/kaspad/infrastructure/network/addressmanager"
-	"github.com/kaspanet/kaspad/infrastructure/network/connmanager"
-	"github.com/kaspanet/kaspad/infrastructure/network/netadapter"
-	"github.com/kaspanet/kaspad/infrastructure/network/netadapter/id"
-	"github.com/kaspanet/kaspad/util/panics"
+	"github.com/ZorkNetwork/zorkmid/app/protocol"
+	"github.com/ZorkNetwork/zorkmid/app/rpc"
+	"github.com/ZorkNetwork/zorkmid/domain"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus"
+	"github.com/ZorkNetwork/zorkmid/domain/utxoindex"
+	"github.com/ZorkNetwork/zorkmid/infrastructure/config"
+	infrastructuredatabase "github.com/ZorkNetwork/zorkmid/infrastructure/db/database"
+	"github.com/ZorkNetwork/zorkmid/infrastructure/network/addressmanager"
+	"github.com/ZorkNetwork/zorkmid/infrastructure/network/connmanager"
+	"github.com/ZorkNetwork/zorkmid/infrastructure/network/netadapter"
+	"github.com/ZorkNetwork/zorkmid/infrastructure/network/netadapter/id"
+	"github.com/ZorkNetwork/zorkmid/util/panics"
 )
 
 // ComponentManager is a wrapper for all the kaspad services

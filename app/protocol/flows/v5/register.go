@@ -1,16 +1,16 @@
 package v5
 
 import (
-	"github.com/kaspanet/kaspad/app/appmessage"
-	"github.com/kaspanet/kaspad/app/protocol/common"
-	"github.com/kaspanet/kaspad/app/protocol/flowcontext"
-	"github.com/kaspanet/kaspad/app/protocol/flows/v5/addressexchange"
-	"github.com/kaspanet/kaspad/app/protocol/flows/v5/blockrelay"
-	"github.com/kaspanet/kaspad/app/protocol/flows/v5/ping"
-	"github.com/kaspanet/kaspad/app/protocol/flows/v5/rejects"
-	"github.com/kaspanet/kaspad/app/protocol/flows/v5/transactionrelay"
-	peerpkg "github.com/kaspanet/kaspad/app/protocol/peer"
-	routerpkg "github.com/kaspanet/kaspad/infrastructure/network/netadapter/router"
+	"github.com/ZorkNetwork/zorkmid/app/appmessage"
+	"github.com/ZorkNetwork/zorkmid/app/protocol/common"
+	"github.com/ZorkNetwork/zorkmid/app/protocol/flowcontext"
+	"github.com/ZorkNetwork/zorkmid/app/protocol/flows/v5/addressexchange"
+	"github.com/ZorkNetwork/zorkmid/app/protocol/flows/v5/blockrelay"
+	"github.com/ZorkNetwork/zorkmid/app/protocol/flows/v5/ping"
+	"github.com/ZorkNetwork/zorkmid/app/protocol/flows/v5/rejects"
+	"github.com/ZorkNetwork/zorkmid/app/protocol/flows/v5/transactionrelay"
+	peerpkg "github.com/ZorkNetwork/zorkmid/app/protocol/peer"
+	routerpkg "github.com/ZorkNetwork/zorkmid/infrastructure/network/netadapter/router"
 )
 
 type protocolManager interface {

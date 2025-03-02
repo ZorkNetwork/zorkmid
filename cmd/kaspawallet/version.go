@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/kaspanet/kaspad/version"
+	"github.com/ZorkNetwork/zorkmid/version"
 	"os"
 	"path/filepath"
 	"strings"

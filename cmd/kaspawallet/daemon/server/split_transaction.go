@@ -4,15 +4,15 @@ import (
 	"github.com/kaspanet/go-secp256k1"
 	"github.com/pkg/errors"
 
-	"github.com/kaspanet/kaspad/cmd/kaspawallet/libkaspawallet"
-	"github.com/kaspanet/kaspad/cmd/kaspawallet/libkaspawallet/serialization"
-	"github.com/kaspanet/kaspad/domain/consensus/model/externalapi"
-	"github.com/kaspanet/kaspad/domain/consensus/utils/consensushashing"
-	"github.com/kaspanet/kaspad/domain/consensus/utils/constants"
-	"github.com/kaspanet/kaspad/domain/consensus/utils/utxo"
-	"github.com/kaspanet/kaspad/domain/miningmanager/mempool"
-	"github.com/kaspanet/kaspad/util"
-	"github.com/kaspanet/kaspad/util/txmass"
+	"github.com/ZorkNetwork/zorkmid/cmd/kaspawallet/libkaspawallet"
+	"github.com/ZorkNetwork/zorkmid/cmd/kaspawallet/libkaspawallet/serialization"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/model/externalapi"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/utils/consensushashing"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/utils/constants"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/utils/utxo"
+	"github.com/ZorkNetwork/zorkmid/domain/miningmanager/mempool"
+	"github.com/ZorkNetwork/zorkmid/util"
+	"github.com/ZorkNetwork/zorkmid/util/txmass"
 )
 
 // maybeAutoCompoundTransaction checks if a transaction's mass is higher that what is allowed for a standard

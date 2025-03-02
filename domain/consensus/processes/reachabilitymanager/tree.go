@@ -5,10 +5,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/kaspanet/kaspad/domain/consensus/utils/reachabilitydata"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/utils/reachabilitydata"
 
-	"github.com/kaspanet/kaspad/domain/consensus/model"
-	"github.com/kaspanet/kaspad/domain/consensus/model/externalapi"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/model"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/model/externalapi"
 
 	"github.com/pkg/errors"
 )

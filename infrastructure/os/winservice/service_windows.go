@@ -7,11 +7,11 @@ package winservice
 import (
 	"fmt"
 
+	"github.com/ZorkNetwork/zorkmid/infrastructure/config"
+	"github.com/ZorkNetwork/zorkmid/infrastructure/os/signal"
+	"github.com/ZorkNetwork/zorkmid/version"
 	"github.com/btcsuite/winsvc/eventlog"
 	"github.com/btcsuite/winsvc/svc"
-	"github.com/kaspanet/kaspad/infrastructure/config"
-	"github.com/kaspanet/kaspad/infrastructure/os/signal"
-	"github.com/kaspanet/kaspad/version"
 )
 
 // Service houses the main service handler which handles all service

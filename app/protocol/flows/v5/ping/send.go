@@ -1,16 +1,16 @@
 package ping
 
 import (
-	"github.com/kaspanet/kaspad/app/protocol/common"
-	"github.com/kaspanet/kaspad/app/protocol/flowcontext"
+	"github.com/ZorkNetwork/zorkmid/app/protocol/common"
+	"github.com/ZorkNetwork/zorkmid/app/protocol/flowcontext"
 	"github.com/pkg/errors"
 	"time"
 
-	"github.com/kaspanet/kaspad/app/appmessage"
-	peerpkg "github.com/kaspanet/kaspad/app/protocol/peer"
-	"github.com/kaspanet/kaspad/app/protocol/protocolerrors"
-	"github.com/kaspanet/kaspad/infrastructure/network/netadapter/router"
-	"github.com/kaspanet/kaspad/util/random"
+	"github.com/ZorkNetwork/zorkmid/app/appmessage"
+	peerpkg "github.com/ZorkNetwork/zorkmid/app/protocol/peer"
+	"github.com/ZorkNetwork/zorkmid/app/protocol/protocolerrors"
+	"github.com/ZorkNetwork/zorkmid/infrastructure/network/netadapter/router"
+	"github.com/ZorkNetwork/zorkmid/util/random"
 )
 
 // SendPingsContext is the interface for the context needed for the SendPings flow.

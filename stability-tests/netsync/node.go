@@ -2,19 +2,19 @@ package main
 
 import (
 	"fmt"
-	"github.com/kaspanet/kaspad/domain/consensus"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus"
 	"os/exec"
 	"strings"
 	"sync/atomic"
 	"syscall"
 	"time"
 
-	"github.com/kaspanet/kaspad/app/appmessage"
-	"github.com/kaspanet/kaspad/stability-tests/common"
-	"github.com/kaspanet/kaspad/stability-tests/common/mine"
-	"github.com/kaspanet/kaspad/stability-tests/common/rpc"
-	"github.com/kaspanet/kaspad/util"
-	"github.com/kaspanet/kaspad/util/panics"
+	"github.com/ZorkNetwork/zorkmid/app/appmessage"
+	"github.com/ZorkNetwork/zorkmid/stability-tests/common"
+	"github.com/ZorkNetwork/zorkmid/stability-tests/common/mine"
+	"github.com/ZorkNetwork/zorkmid/stability-tests/common/rpc"
+	"github.com/ZorkNetwork/zorkmid/util"
+	"github.com/ZorkNetwork/zorkmid/util/panics"
 	"github.com/pkg/errors"
 )
 

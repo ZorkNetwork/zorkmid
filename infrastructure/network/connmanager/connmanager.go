@@ -6,15 +6,15 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/kaspanet/kaspad/app/appmessage"
-	"github.com/kaspanet/kaspad/infrastructure/network/dnsseed"
+	"github.com/ZorkNetwork/zorkmid/app/appmessage"
+	"github.com/ZorkNetwork/zorkmid/infrastructure/network/dnsseed"
 	"github.com/pkg/errors"
 
-	"github.com/kaspanet/kaspad/infrastructure/network/addressmanager"
+	"github.com/ZorkNetwork/zorkmid/infrastructure/network/addressmanager"
 
-	"github.com/kaspanet/kaspad/infrastructure/network/netadapter"
+	"github.com/ZorkNetwork/zorkmid/infrastructure/network/netadapter"
 
-	"github.com/kaspanet/kaspad/infrastructure/config"
+	"github.com/ZorkNetwork/zorkmid/infrastructure/config"
 )
 
 // connectionRequest represents a user request (either through CLI or RPC) to connect to a certain node

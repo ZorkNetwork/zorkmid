@@ -1,20 +1,20 @@
 package protocol
 
 import (
-	"github.com/kaspanet/kaspad/app/protocol/common"
-	"github.com/kaspanet/kaspad/app/protocol/flows/ready"
-	"github.com/kaspanet/kaspad/app/protocol/flows/v5"
+	"github.com/ZorkNetwork/zorkmid/app/protocol/common"
+	"github.com/ZorkNetwork/zorkmid/app/protocol/flows/ready"
+	"github.com/ZorkNetwork/zorkmid/app/protocol/flows/v5"
 	"sync"
 	"sync/atomic"
 
-	"github.com/kaspanet/kaspad/app/appmessage"
-	"github.com/kaspanet/kaspad/app/protocol/flows/handshake"
-	peerpkg "github.com/kaspanet/kaspad/app/protocol/peer"
-	"github.com/kaspanet/kaspad/app/protocol/protocolerrors"
-	"github.com/kaspanet/kaspad/infrastructure/network/addressmanager"
-	"github.com/kaspanet/kaspad/infrastructure/network/connmanager"
-	"github.com/kaspanet/kaspad/infrastructure/network/netadapter"
-	routerpkg "github.com/kaspanet/kaspad/infrastructure/network/netadapter/router"
+	"github.com/ZorkNetwork/zorkmid/app/appmessage"
+	"github.com/ZorkNetwork/zorkmid/app/protocol/flows/handshake"
+	peerpkg "github.com/ZorkNetwork/zorkmid/app/protocol/peer"
+	"github.com/ZorkNetwork/zorkmid/app/protocol/protocolerrors"
+	"github.com/ZorkNetwork/zorkmid/infrastructure/network/addressmanager"
+	"github.com/ZorkNetwork/zorkmid/infrastructure/network/connmanager"
+	"github.com/ZorkNetwork/zorkmid/infrastructure/network/netadapter"
+	routerpkg "github.com/ZorkNetwork/zorkmid/infrastructure/network/netadapter/router"
 	"github.com/pkg/errors"
 )
 

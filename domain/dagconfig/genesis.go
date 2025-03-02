@@ -7,11 +7,11 @@ package dagconfig
 import (
 	"math/big"
 
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/model/externalapi"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/utils/blockheader"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/utils/subnetworks"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/utils/transactionhelper"
 	"github.com/kaspanet/go-muhash"
-	"github.com/kaspanet/kaspad/domain/consensus/model/externalapi"
-	"github.com/kaspanet/kaspad/domain/consensus/utils/blockheader"
-	"github.com/kaspanet/kaspad/domain/consensus/utils/subnetworks"
-	"github.com/kaspanet/kaspad/domain/consensus/utils/transactionhelper"
 )
 
 var genesisTxOuts = []*externalapi.DomainTransactionOutput{}

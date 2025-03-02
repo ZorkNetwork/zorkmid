@@ -6,9 +6,9 @@ import (
 	"os"
 	"strings"
 
-	"github.com/kaspanet/kaspad/cmd/kaspawallet/daemon/server"
-	"github.com/kaspanet/kaspad/cmd/kaspawallet/keys"
-	"github.com/kaspanet/kaspad/cmd/kaspawallet/libkaspawallet"
+	"github.com/ZorkNetwork/zorkmid/cmd/kaspawallet/daemon/server"
+	"github.com/ZorkNetwork/zorkmid/cmd/kaspawallet/keys"
+	"github.com/ZorkNetwork/zorkmid/cmd/kaspawallet/libkaspawallet"
 	"github.com/pkg/errors"
 )
 

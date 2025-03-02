@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/kaspanet/kaspad/cmd/kaspawallet/daemon/client"
-	"github.com/kaspanet/kaspad/cmd/kaspawallet/daemon/pb"
-	"github.com/kaspanet/kaspad/cmd/kaspawallet/daemon/server"
+	"github.com/ZorkNetwork/zorkmid/cmd/kaspawallet/daemon/client"
+	"github.com/ZorkNetwork/zorkmid/cmd/kaspawallet/daemon/pb"
+	"github.com/ZorkNetwork/zorkmid/cmd/kaspawallet/daemon/server"
 )
 
 func bumpFeeUnsigned(conf *bumpFeeUnsignedConfig) error {

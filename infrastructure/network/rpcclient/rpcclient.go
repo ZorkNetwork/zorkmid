@@ -4,12 +4,12 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/kaspanet/kaspad/app/appmessage"
-	"github.com/kaspanet/kaspad/infrastructure/logger"
-	routerpkg "github.com/kaspanet/kaspad/infrastructure/network/netadapter/router"
-	"github.com/kaspanet/kaspad/infrastructure/network/rpcclient/grpcclient"
-	"github.com/kaspanet/kaspad/util/panics"
-	"github.com/kaspanet/kaspad/version"
+	"github.com/ZorkNetwork/zorkmid/app/appmessage"
+	"github.com/ZorkNetwork/zorkmid/infrastructure/logger"
+	routerpkg "github.com/ZorkNetwork/zorkmid/infrastructure/network/netadapter/router"
+	"github.com/ZorkNetwork/zorkmid/infrastructure/network/rpcclient/grpcclient"
+	"github.com/ZorkNetwork/zorkmid/util/panics"
+	"github.com/ZorkNetwork/zorkmid/version"
 	"github.com/pkg/errors"
 )
 

@@ -5,10 +5,10 @@ import (
 	"sort"
 	"strings"
 
+	"github.com/ZorkNetwork/zorkmid/cmd/kaspawallet/libkaspawallet/bip32"
+	"github.com/ZorkNetwork/zorkmid/domain/dagconfig"
+	"github.com/ZorkNetwork/zorkmid/util"
 	"github.com/kaspanet/go-secp256k1"
-	"github.com/kaspanet/kaspad/cmd/kaspawallet/libkaspawallet/bip32"
-	"github.com/kaspanet/kaspad/domain/dagconfig"
-	"github.com/kaspanet/kaspad/util"
 	"github.com/pkg/errors"
 )
 

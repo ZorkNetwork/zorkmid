@@ -1,9 +1,8 @@
-module github.com/kaspanet/kaspad
-//module github.com/ZorkNetwork/zorkmid
+module github.com/ZorkNetwork/zorkmid
 
 go 1.23
 
-replace github.com/kaspanet/kaspad/ => .
+//replace github.com/ZorkNetwork/zorkmid/ => .
 
 require (
 	github.com/btcsuite/btcutil v1.0.2
@@ -31,4 +30,5 @@ require (
 	golang.org/x/sys v0.28.0 // indirect
 	golang.org/x/text v0.21.0 // indirect
 	google.golang.org/genproto v0.0.0-20210604141403-392c879c8b08 // indirect
+	gopkg.in/yaml.v2 v2.3.0 // indirect
 )
