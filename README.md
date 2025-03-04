@@ -1,6 +1,7 @@
 # zorkmid
 
 [![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](https://choosealicense.com/licenses/isc/)
+[![Tests](https://github.com/ZorkNetwork/zorkmid/actions/workflows/tests.yaml/badge.svg)](https://github.com/ZorkNetwork/zorkmid/actions/workflows/tests.yaml)
 [![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/ZorkNetwork/zorkmid)
 
 Zorkmid is the reference node implementaiton for Zork crypto currency written in Go.
