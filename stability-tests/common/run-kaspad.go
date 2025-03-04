@@ -2,11 +2,12 @@ package common
 
 import (
 	"fmt"
-	"github.com/ZorkNetwork/zorkmid/domain/dagconfig"
 	"os"
 	"sync/atomic"
 	"syscall"
 	"testing"
+
+	"github.com/ZorkNetwork/zorkmid/domain/dagconfig"
 )
 
 // RunKaspadForTesting runs kaspad for testing purposes
@@ -17,7 +18,7 @@ func RunKaspadForTesting(t *testing.T, testName string, rpcAddress string) func(
 	}
 
 	kaspadRunCommand, err := StartCmd("KASPAD",
-		"kaspad",
+		"zorkmid",
 		NetworkCliArgumentFromNetParams(&dagconfig.DevnetParams),
 		"--appdir", appDir,
 		"--rpclisten", rpcAddress,

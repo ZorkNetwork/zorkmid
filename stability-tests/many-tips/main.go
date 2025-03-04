@@ -2,10 +2,6 @@ package main
 
 import (
 	"fmt"
-	"github.com/ZorkNetwork/zorkmid/app/appmessage"
-	"github.com/ZorkNetwork/zorkmid/domain/consensus/utils/mining"
-	"github.com/ZorkNetwork/zorkmid/util"
-	"github.com/kaspanet/go-secp256k1"
 	"math/rand"
 	"os"
 	"os/exec"
@@ -14,6 +10,11 @@ import (
 	"sync/atomic"
 	"syscall"
 	"time"
+
+	"github.com/ZorkNetwork/zorkmid/app/appmessage"
+	"github.com/ZorkNetwork/zorkmid/domain/consensus/utils/mining"
+	"github.com/ZorkNetwork/zorkmid/util"
+	"github.com/kaspanet/go-secp256k1"
 
 	"github.com/ZorkNetwork/zorkmid/stability-tests/common"
 	"github.com/ZorkNetwork/zorkmid/stability-tests/common/rpc"
@@ -109,7 +110,7 @@ func startNode() (teardown func(), err error) {
 	log.Infof("kaspad datadir: %s", dataDir)
 
 	kaspadCmd, err := common.StartCmd("KASPAD",
-		"kaspad",
+		"zorkmid",
 		common.NetworkCliArgumentFromNetParams(activeConfig().NetParams()),
 		"--appdir", dataDir,
 		"--logdir", dataDir,

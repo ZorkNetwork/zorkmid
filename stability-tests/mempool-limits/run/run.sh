@@ -5,7 +5,7 @@ KASPAD_RPC_PORT=29587
 
 rm -rf "${APPDIR}"
 
-kaspad --simnet --appdir="${APPDIR}" --rpclisten=0.0.0.0:"${KASPAD_RPC_PORT}" --profile=6061 &
+zorkmid --simnet --appdir="${APPDIR}" --rpclisten=0.0.0.0:"${KASPAD_RPC_PORT}" --profile=6061 &
 KASPAD_PID=$!
 
 sleep 1

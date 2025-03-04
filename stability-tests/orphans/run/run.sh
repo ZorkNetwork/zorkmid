@@ -1,7 +1,7 @@
 #!/bin/bash
 rm -rf /tmp/kaspad-temp
 
-kaspad --simnet --appdir=/tmp/kaspad-temp --profile=6061 &
+zorkmid --simnet --appdir=/tmp/kaspad-temp --profile=6061 &
 KASPAD_PID=$!
 
 sleep 1

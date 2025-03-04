@@ -2,12 +2,13 @@ package main
 
 import (
 	"fmt"
-	"github.com/ZorkNetwork/zorkmid/domain/consensus"
 	"os/exec"
 	"strings"
 	"sync/atomic"
 	"syscall"
 	"time"
+
+	"github.com/ZorkNetwork/zorkmid/domain/consensus"
 
 	"github.com/ZorkNetwork/zorkmid/app/appmessage"
 	"github.com/ZorkNetwork/zorkmid/stability-tests/common"
@@ -30,7 +31,7 @@ func startNode(name string, rpcAddress, listen, connect, profilePort, dataDir st
 	log.Infof("Data directory for %s is %s", name, dataDir)
 
 	args := []string{
-		"kaspad",
+		"zorkmid",
 		common.NetworkCliArgumentFromNetParams(activeConfig().NetParams()),
 		"--appdir", dataDir,
 		"--logdir", dataDir,

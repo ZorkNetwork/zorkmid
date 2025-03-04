@@ -40,7 +40,7 @@ func commandLoop(argsChan <-chan []string) ([]commandFailure, error) {
 			return nil, err
 		}
 
-		cmd := exec.Command("kaspad", args...)
+		cmd := exec.Command("zorkmid", args...)
 		cmd.Stdout = common.NewLogWriter(log, logger.LevelTrace, "KASPAD-STDOUT")
 		cmd.Stderr = common.NewLogWriter(log, logger.LevelWarn, "KASPAD-STDERR")
 
