@@ -2,7 +2,6 @@ package consensusstatemanager
 
 import (
 	"github.com/ZorkNetwork/zorkmid/infrastructure/logger"
-	"github.com/ZorkNetwork/zorkmid/util/math"
 	"github.com/pkg/errors"
 
 	"github.com/ZorkNetwork/zorkmid/domain/consensus/model"
@@ -39,7 +38,7 @@ func (csm *consensusStateManager) pickVirtualParents(stagingArea *model.StagingA
 	// There's no specific reason for a factor of 3, and its not a consensus rule, just an estimation saying we probably
 	// don't want to consider and calculate 3 times the amount of candidates for the set of parents.
 	maxCandidates := int(csm.maxBlockParents) * 3
-	candidateAllocationSize := math.MinInt(maxCandidates, candidatesHeap.Len())
+	candidateAllocationSize := min(maxCandidates, candidatesHeap.Len())
 	candidates := make([]*externalapi.DomainHash, 0, candidateAllocationSize)
 	for len(candidates) < maxCandidates && candidatesHeap.Len() > 0 {
 		candidates = append(candidates, candidatesHeap.Pop())

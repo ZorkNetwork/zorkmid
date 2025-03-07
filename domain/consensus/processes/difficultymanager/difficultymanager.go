@@ -5,7 +5,6 @@ import (
 	"time"
 
 	"github.com/ZorkNetwork/zorkmid/infrastructure/logger"
-	"github.com/ZorkNetwork/zorkmid/util/math"
 
 	"github.com/ZorkNetwork/zorkmid/util/difficulty"
 
@@ -128,7 +127,7 @@ func (dm *difficultyManager) requiredDifficultyFromTargetsWindow(targetsWindow b
 	newTarget := targetsWindow.averageTarget()
 	newTarget.
 		// We need to clamp the timestamp difference to 1 so that we'll never get a 0 target.
-		Mul(newTarget, div.SetInt64(math.MaxInt64(windowMaxTimeStamp-windowMinTimestamp, 1))).
+		Mul(newTarget, div.SetInt64(max(windowMaxTimeStamp-windowMinTimestamp, 1))).
 		Div(newTarget, div.SetInt64(dm.targetTimePerBlock.Milliseconds())).
 		Div(newTarget, div.SetUint64(uint64(len(targetsWindow))))
 	if newTarget.Cmp(dm.powMax) > 0 {

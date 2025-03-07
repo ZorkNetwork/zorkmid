@@ -9,7 +9,6 @@ import (
 
 	"github.com/ZorkNetwork/zorkmid/app/appmessage"
 	"github.com/ZorkNetwork/zorkmid/infrastructure/network/netadapter/id"
-	mathUtil "github.com/ZorkNetwork/zorkmid/util/math"
 	"github.com/ZorkNetwork/zorkmid/util/mstime"
 )
 
@@ -94,7 +93,7 @@ func (p *Peer) IsOutbound() bool {
 func (p *Peer) UpdateFieldsFromMsgVersion(msg *appmessage.MsgVersion, maxProtocolVersion uint32) {
 	// Negotiate the protocol version.
 	p.advertisedProtocolVerion = msg.ProtocolVersion
-	p.protocolVersion = mathUtil.MinUint32(maxProtocolVersion, p.advertisedProtocolVerion)
+	p.protocolVersion = min(maxProtocolVersion, p.advertisedProtocolVerion)
 	log.Debugf("Negotiated protocol version %d for peer %s",
 		p.protocolVersion, p)
 
