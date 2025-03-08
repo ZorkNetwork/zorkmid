@@ -10,8 +10,8 @@ const validCharacters = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrs
 
 const (
 	appMajor uint = 0
-	appMinor uint = 1
-	appPatch uint = 100
+	appMinor uint = 100
+	appPatch uint = 0
 )
 
 // appBuild is defined as a variable so it can be overridden during the build
@@ -24,7 +24,7 @@ var version = "" // string used for memoization of version
 func init() {
 	if version == "" {
 		// Start with the major, minor, and patch versions.
-		version = fmt.Sprintf("%d.%d.%d", appMajor, appMinor, appPatch)
+		version = fmt.Sprintf("%d.%d.%d-dev", appMajor, appMinor, appPatch)
 
 		// Append build metadata if there is any.
 		// Panic if any invalid characters are encountered
