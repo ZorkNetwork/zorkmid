@@ -80,6 +80,10 @@ func SeedFromDNS(dagParams *dagconfig.Params, customSeed string, includeAllSubne
 			addresses := make([]*appmessage.NetAddress, len(seedPeers))
 			// if this errors then we have *real* problems
 			intPort, _ := strconv.Atoi(dagParams.DefaultPort)
+			if intPort < 0 || intPort > 65535 {
+				log.Warnf("Invalid port number: %d. Skipping seed operation.", intPort)
+				return
+			}
 			for i, peer := range seedPeers {
 				addresses[i] = appmessage.NewNetAddressTimestamp(
 					// seed with addresses from a time randomly selected
@@ -145,6 +149,10 @@ func SeedFromGRPC(dagParams *dagconfig.Params, customSeed string, includeAllSubn
 			addresses := make([]*appmessage.NetAddress, len(seedPeers))
 			// if this errors then we have *real* problems
 			intPort, _ := strconv.Atoi(dagParams.DefaultPort)
+			if intPort < 0 || intPort > 65535 {
+				log.Warnf("Invalid port number: %d. Skipping seed operation.", intPort)
+				return
+			}
 			for i, peer := range seedPeers {
 				addresses[i] = appmessage.NewNetAddressTimestamp(
 					// seed with addresses from a time randomly selected

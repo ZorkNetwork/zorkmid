@@ -23,7 +23,7 @@ func AddAddressByIP(am *AddressManager, addressIP string, subnetworkID *external
 		return errors.Errorf("invalid ip %s", ipString)
 	}
 	port, err := strconv.ParseUint(portString, 10, 0)
-	if err != nil {
+	if err != nil || port > 65535 {
 		return errors.Errorf("invalid port %s: %s", portString, err)
 	}
 	netAddress := appmessage.NewNetAddressIPPort(ip, uint16(port))
