@@ -82,8 +82,8 @@ jobs:
         with:
           go-version: 1.23
 
-      - name: Delete the stability tests from coverage
-        run: rm -r stability-tests
+      - name: Run the stability tests for coverage
+        run: mkdir .coverageData; export GOCOVERDIR="$(pwd)/.coverageData"; export COVERAGEFLAGS="-cover -covermode=atomic -coverpkg=github.com/ZorkNetwork/zorkmid"; cd stability-tests; ./install_and_test.sh; cd ..; go tool covdata textfmt -i=$GOCOVERDIR -o stability_coverage.txt
 
       - name: Create coverage file
         run: go test -v -covermode=atomic -coverpkg=./... -coverprofile coverage.txt ./...
@@ -92,4 +92,5 @@ jobs:
         uses: codecov/codecov-action@v5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
+          files: ./coverage.txt,./stability_coverage.txt
           slug: ZorkNetwork/zorkmid

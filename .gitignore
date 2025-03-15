@@ -33,6 +33,8 @@ cmd/genkeypair/keygen
 
 # Output of the go coverage tool
 *.out
+.coverageData/*
+**/.coverageData/*
 
 # Folders
 _obj
