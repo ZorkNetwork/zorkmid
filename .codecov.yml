@@ -7,3 +7,4 @@ coverage:
         informational: true
 ignore:
   - "**/*.pb.go" # Ignore all auto generated protobuf structures.
+  - "stability-tests" # Ignore the test code
