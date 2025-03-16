@@ -46,32 +46,34 @@ jobs:
         shell: bash
         run: ./build_and_test.sh -v
 
-  stability-test-fast:
-    runs-on: ubuntu-latest
-    name: Fast stability tests, ${{ github.head_ref }}
-    steps:
-      - name: Setup Go
-        uses: actions/setup-go@v2
-        with:
-          go-version: 1.23
+  # stability-test-fast:
+  #   runs-on: ubuntu-latest
+  #   name: Fast stability tests, ${{ github.head_ref }}
+  #   steps:
+  #     - name: Setup Go
+  #       uses: actions/setup-go@v2
+  #       with:
+  #         go-version: 1.23
 
-      - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
+  #     - name: Checkout
+  #       uses: actions/checkout@v2
+  #       with:
+  #         fetch-depth: 0
 
-      - name: Install kaspad
-        run: go install ./...
+  #     - name: Install kaspad
+  #       run: go install ./...
 
-      - name: Install golint
-        run: go get -u golang.org/x/lint/golint
+  #     - name: Install golint
+  #       run: go get -u golang.org/x/lint/golint
 
-      - name: Run fast stability tests
-        working-directory: stability-tests
-        run: ./install_and_test.sh
+  #     - name: Run fast stability tests
+  #       working-directory: stability-tests
+  #       run: ./install_and_test.sh
 
   coverage:
     runs-on: ubuntu-latest
+    env:
+      GOCOVERDIR: ${{ github.workspace }}/.coverageData
     name: Produce code coverage
     steps:
       - name: Check out code into the Go module directory
@@ -82,8 +84,21 @@ jobs:
         with:
           go-version: 1.23
 
-      - name: Run the stability tests for coverage
-        run: mkdir .coverageData; export GOCOVERDIR="$(pwd)/.coverageData"; export COVERAGEFLAGS="-cover -covermode=atomic -coverpkg=github.com/ZorkNetwork/zorkmid"; cd stability-tests; ./install_and_test.sh; cd ..; go tool covdata textfmt -i=$GOCOVERDIR -o stability_coverage.txt
+      - name: Install kaspad
+        run: go install ./...
+
+      - name: Install golint
+        run: go get -u golang.org/x/lint/golint
+
+      - name: Create coverage directory
+        run: mkdir $GOCOVERDIR
+
+      - name: Run fast stability tests w/ coverage outputs
+        working-directory: stability-tests
+        run: export COVERAGEFLAGS="-cover -covermode=atomic -coverpkg=github.com/ZorkNetwork/zorkmid"; ./install_and_test.sh;
+
+      - name: Create stability tests coverage file
+        run: go tool covdata textfmt -i=$GOCOVERDIR -o stability_coverage.txt
 
       - name: Create coverage file
         run: go test -v -covermode=atomic -coverpkg=./... -coverprofile coverage.txt ./...
