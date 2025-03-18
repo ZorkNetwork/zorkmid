@@ -17,10 +17,12 @@ type Key struct {
 // from the bucket path concatenated to the suffix.
 func (k *Key) Bytes() []byte {
 	bucketPath := k.bucket.Path()
-	length := len(bucketPath) + len(k.suffix)
-	if length > int(^uint(0)>>1) {
-		length = int(^uint(0) >> 1)
+	bucketPathLen := len(bucketPath)
+	suffixLen := len(k.suffix)
+	if bucketPathLen > int(^uint(0)>>1)-suffixLen {
+		return nil
 	}
+	length := bucketPathLen + suffixLen
 	keyBytes := make([]byte, length)
 	copy(keyBytes, bucketPath)
 	copy(keyBytes[len(bucketPath):], k.suffix)
