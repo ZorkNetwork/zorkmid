@@ -26,8 +26,11 @@ cmd/kasminer/kaspaminer
 *.exe
 *.exe~
 zorkmid
+cmd/kaspactl/kaspactl
 cmd/kaspactl/zorkctl
+cmd/kaspaminer/kaspaminer
 cmd/kaspaminer/miner
+cmd/kaspawallet/kaspawallet
 cmd/kaspawallet/zorkwallet
 cmd/genkeypair/keygen
 
