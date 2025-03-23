@@ -19,10 +19,10 @@ func (k *Key) Bytes() []byte {
 	bucketPath := k.bucket.Path()
 	bucketPathLen := len(bucketPath)
 	suffixLen := len(k.suffix)
-	if bucketPathLen > int(^uint(0)>>1)-suffixLen {
+	length := bucketPathLen + suffixLen
+	if length < bucketPathLen || length < suffixLen {
 		return nil
 	}
-	length := bucketPathLen + suffixLen
 	keyBytes := make([]byte, length)
 	copy(keyBytes, bucketPath)
 	copy(keyBytes[len(bucketPath):], k.suffix)
