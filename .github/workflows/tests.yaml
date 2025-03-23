@@ -95,7 +95,7 @@ jobs:
 
       - name: Run fast stability tests w/ coverage outputs
         working-directory: stability-tests
-        run: export COVERAGEFLAGS="-cover -covermode=atomic -coverpkg=github.com/ZorkNetwork/zorkmid,github.com/ZorkNetwork/zorkmid/cmd/kaspaminer,github.com/ZorkNetwork/zorkmid/cmd/kaspawallet,github.com/ZorkNetwork/zorkmid/cmd/kaspactl"; ./install_and_test.sh;
+        run: export COVERAGEFLAGS="-cover -covermode=atomic -coverpkg=all"; ./install_and_test.sh;
 
       - name: Create stability tests coverage file
         run: go tool covdata textfmt -i=$GOCOVERDIR -o stability_coverage.txt
