@@ -127,7 +127,10 @@ jobs:
 
       - name: Run fast stability tests w/ coverage outputs
         working-directory: stability-tests
-        run: CVPKG=$(go list ./... | grep -v stability-tests | tr '\n' ','); export COVERAGEFLAGS="-cover -covermode=atomic -coverpkg $CVPKG"; ./install_and_test.sh;
+        run: |
+          export CVPKG=$(go list ./... | grep -v stability-tests | tr '\n' ',')
+          export COVERAGEFLAGS="-cover -covermode=atomic -coverpkg $CVPKG"
+          ./install_and_test.sh
 
       - name: Create stability tests coverage file
         run: go tool covdata textfmt -i=$GOCOVERDIR -o stability_coverage.txt
