@@ -33,6 +33,9 @@ jobs:
         with:
           go-version: 1.23
 
+      - name: Install protobuf-compiler
+        run: sudo apt-get install -y protobuf-compiler
+
       # Source: https://github.com/actions/cache/blob/main/examples.md#go---modules
       - name: Go Cache
         uses: actions/cache@v3
