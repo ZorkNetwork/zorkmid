@@ -85,6 +85,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GOCOVERDIR: ${{ github.workspace }}/.coverageData
+      CVPKG: $(go list ./... | grep -v stability-tests | tr '\n' ',')
+      COVERAGEFLAGS: "-cover -covermode=atomic -coverpkg $CVPKG"
     name: Produce code coverage
     steps:
       - name: Check out code into the Go module directory
