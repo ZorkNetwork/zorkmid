@@ -1,14 +1,15 @@
 package miningmanager_test
 
 import (
-	"github.com/ZorkNetwork/zorkmid/cmd/kaspawallet/libkaspawallet"
+	"reflect"
+	"strings"
+	"testing"
+
+	"github.com/ZorkNetwork/zorkmid/cmd/wallet/libwallet"
 	"github.com/ZorkNetwork/zorkmid/domain/consensusreference"
 	"github.com/ZorkNetwork/zorkmid/domain/miningmanager/model"
 	"github.com/ZorkNetwork/zorkmid/util"
 	"github.com/ZorkNetwork/zorkmid/version"
-	"reflect"
-	"strings"
-	"testing"
 
 	"github.com/ZorkNetwork/zorkmid/domain/miningmanager/mempool"
 
@@ -885,7 +886,7 @@ func generateNewCoinbase(addressPrefix util.Bech32Prefix, op opType) (*externala
 			ExtraData:       nil,
 		}, nil
 	}
-	_, publicKey, err := libkaspawallet.CreateKeyPair(op == opECDSA)
+	_, publicKey, err := libwallet.CreateKeyPair(op == opECDSA)
 	if err != nil {
 		return nil, err
 	}

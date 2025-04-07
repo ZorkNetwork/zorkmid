@@ -213,8 +213,8 @@ var MainnetParams = Params{
 	Net:         appmessage.Mainnet,
 	RPCPort:     "24303",
 	DefaultPort: "24301",
-	DNSSeeds:    []string{
-		//"mainnet-seed.node.zork.network", // NOTE: not yet implemented
+	DNSSeeds: []string{
+		"seed.zork.network",
 	},
 
 	// DAG parameters
@@ -276,12 +276,12 @@ var MainnetParams = Params{
 // TestnetParams defines the network parameters for the test Kaspa network.
 var TestnetParams = Params{
 	K:           defaultGHOSTDAGK,
-	Name:        "zork-testnet-10",
+	Name:        "zork-testnet",
 	Net:         appmessage.Testnet,
 	RPCPort:     "23295",
 	DefaultPort: "23294",
 	DNSSeeds: []string{
-		//"testnet-seed.node.zork.network", // NOTE: not yet implemented
+		"seed.zork.network",
 		"127.0.0.1",
 	},
 

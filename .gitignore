@@ -18,26 +18,27 @@ kaspad.db
 # Test binary, built with `go test -c`
 *.test
 
+# Go generated files
+*.pb.go
+cmd/wallet/libwallet/bip32/base58/alphabet.go
+
 # Real binaries, build with `go build .`
 kaspad
 cmd/gencerts/gencerts
-cmd/kaspactl/kaspactl
-cmd/kasminer/kaspaminer
 *.exe
 *.exe~
 zorkmid
-cmd/kaspactl/kaspactl
-cmd/kaspactl/zorkctl
-cmd/kaspaminer/kaspaminer
-cmd/kaspaminer/miner
-cmd/kaspawallet/kaspawallet
-cmd/kaspawallet/zorkwallet
-cmd/genkeypair/keygen
+cmd/cmdctrl/cmdctrl
+cmd/miner/miner
+cmd/wallet/wallet
+cmd/keygen/keygen
 
 # Output of the go coverage tool
 *.out
 .coverageData/*
 **/.coverageData/*
+stability_coverage.txt
+coverage.txt
 
 # Folders
 _obj
