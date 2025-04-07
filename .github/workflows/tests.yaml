@@ -85,7 +85,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GOCOVERDIR: ${{ github.workspace }}/.coverageData
-      CVPKG: $(go list ./... | grep -v stability-tests | tr '\n' ',')
+      CVPKG: $(go list ./... | grep -v mocks | tr '\n' ',')
       COVERAGEFLAGS: "-cover -covermode=atomic -coverpkg $CVPKG"
     name: Produce code coverage
     steps:
