@@ -103,8 +103,12 @@ jobs:
         if: runner.os == 'macOS'
         run: brew install protobuf
 
-      - name: Update path variable
-        run: export PATH=$PATH:~/go/bin
+      - name: Install protobuf go modules
+        run: |
+          go get google.golang.org/protobuf/cmd/protoc-gen-go
+          go install google.golang.org/protobuf/cmd/protoc-gen-go
+          go get google.golang.org/grpc/cmd/protoc-gen-go-grpc
+          go install google.golang.org/grpc/cmd/protoc-gen-go-grpc
 
       - name: Update path variable
         run: export PATH=$PATH:~/go/bin
