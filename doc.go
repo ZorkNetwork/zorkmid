@@ -1,12 +1,12 @@
-/*
-Copyright (c) 2025      Zork Network developers
-Copyright (c) 2018-2019 The kaspanet developers
-Copyright (c) 2013-2018 The btcsuite developers
-Copyright (c) 2015-2016 The Decred developers
-Copyright (c) 2013-2014 Conformal Systems LLC.
-Use of this source code is governed by an ISC
-license that can be found in the LICENSE file.
+// Copyright (c) 2025      Zork Network developers
+// Copyright (c) 2018-2019 The kaspanet developers
+// Copyright (c) 2013-2018 The btcsuite developers
+// Copyright (c) 2015-2016 The Decred developers
+// Copyright (c) 2013-2014 Conformal Systems LLC.
+// Use of this source code is governed by an ISC
+// license that can be found in the LICENSE file.
 
+/*
 Zorkmid is a full-node zork coin implementation written in Go.
 
 The default options are sane for most users. This means zorkmid will work 'out of
