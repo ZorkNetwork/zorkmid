@@ -5,6 +5,14 @@ FLAGS=$@
 go version
 
 go get $FLAGS -t ./...
+
+go get google.golang.org/protobuf/cmd/protoc-gen-go
+#go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
+go get google.golang.org/grpc/cmd/protoc-gen-go-grpc
+#go install google.golang.org/grpc/cmd/protoc-gen-go-grpc
+#sudo apt install protobuf-compiler
+go generate ./...
+
 go install $FLAGS honnef.co/go/tools/cmd/staticcheck@latest
 
 test -z "$(go fmt ./...)"
