@@ -36,6 +36,9 @@ jobs:
       - name: Install protobuf-compiler
         run: sudo apt-get install -y protobuf-compiler
 
+      - name: Update path variable
+        run: export PATH=$PATH:~/go/bin
+
       # Source: https://github.com/actions/cache/blob/main/examples.md#go---modules
       - name: Go Cache
         uses: actions/cache@v3
@@ -89,6 +92,9 @@ jobs:
 
       - name: Install protobuf-compiler
         run: sudo apt-get install -y protobuf-compiler
+
+      - name: Update path variable
+        run: export PATH=$PATH:~/go/bin
 
       - name: Install kaspad
         run: go install ./...
