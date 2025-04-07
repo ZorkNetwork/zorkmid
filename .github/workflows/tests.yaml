@@ -130,7 +130,7 @@ jobs:
       - name: Run fast stability tests w/ coverage outputs
         working-directory: stability-tests
         run: |
-          export CVPKG=$(go list ./... | grep -v stability-tests | tr '\n' ',')
+          export CVPKG=$(go list ./... | grep -v mocks | tr '\n' ',')
           export COVERAGEFLAGS="-cover -covermode=atomic -coverpkg $CVPKG"
           ./install_and_test.sh
 
