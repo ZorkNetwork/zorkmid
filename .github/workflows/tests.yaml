@@ -84,6 +84,9 @@ jobs:
         with:
           go-version: 1.23
 
+      - name: Install protobuf-compiler
+        run: sudo apt-get install -y protobuf-compiler
+
       - name: Install kaspad
         run: go install ./...
 
